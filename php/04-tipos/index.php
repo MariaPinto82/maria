@@ -22,3 +22,13 @@ echo "<hr>";
 echo gettype($texto);
 echo "<hr>";
 echo gettype($verdadero);
+
+// Debugear
+
+$miNombre[] = "María Leonor Pinto Sabater";
+
+$miNombre[] = "María Leonor Pinto Sabater";
+echo "<hr>";
+$miNombre[] = "María Leonor Pinto Sabater";
+var_dump($miNombre);
+echo "<hr>";
