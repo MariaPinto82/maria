@@ -11,3 +11,14 @@
  * Boolean: Se trata de un tipo logico. Sus posibles valores son true (verdadero) o false (falso);
  * 
  */
+$texto = "Hola me llamo Mia";  // String;
+$numero = 100; // Integer;
+$decimal =27.9;  // Float o Double;
+$verdadero = true;
+echo gettype($decimal);
+echo "<hr>";
+echo gettype($numero);
+echo "<hr>";
+echo gettype($texto);
+echo "<hr>";
+echo gettype($verdadero);
