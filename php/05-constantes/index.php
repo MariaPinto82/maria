@@ -22,4 +22,7 @@ echo "<br>";
 
 // Variable
 $web = "leonorweb.es";
-echo "<h1>".web."</h1>";
+echo "<h1>".$web."</h1>";
+$web = "mariaweb.es";
+echo "<h1>".$web."</h1>";
+
