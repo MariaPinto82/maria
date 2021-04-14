@@ -26,3 +26,16 @@ echo "<h1>".$web."</h1>";
 $web = "mariaweb.es";
 echo "<h1>".$web."</h1>";
 
+/**
+ * Constantes predifinidas: 
+ * PHP_VERSION
+ * PHP_OS
+ * PHP_EXTENSION_DIR
+ * __LINE__
+ * __FILE__
+ * __FUNCTION__
+ * __CLASS__
+ * __METHOD__
+ */
+
+
