@@ -27,7 +27,7 @@ $web = "mariaweb.es";
 echo "<h1>".$web."</h1>";
 
 /**
- * Constantes predifinidas: 
+ * Constantes predifinidas: (entre otros...)
  * PHP_VERSION
  * PHP_OS
  * PHP_EXTENSION_DIR
