@@ -133,7 +133,7 @@ if($edadOficial >= $edad1 && $edadOficial <= $edad2){
 }
 
 echo "<hr>";
-// Ejemplo 7:
+// Ejemplo 7: si una se cumple, se dara como true
 $pais = "Mexico";
 if($pais == "Mexico" || $pais == "España" || $pais == "Colombia"){
     echo "En este pais se habla español";
