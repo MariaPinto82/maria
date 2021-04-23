@@ -44,3 +44,18 @@ while($contador <= 10){
     $contador++;
 }
 
+/* DO WHILE 
+do{
+    // Bloque de instrucciones
+}while(condicion);
+*/
+
+$edad = 38;
+$contador = 1;
+
+
+
+do{
+    echo "tienes acceso al local privado $contador <br />";
+    $contador++;
+}while($edad >= 18 && $contador <= 10);
