@@ -28,5 +28,19 @@ while($numero <= 100){
     }
     $numero++;
 }
+echo "<hr>";
 
-// Ejemplos con while:
+    if(isset($_GET['numero'])){
+        $numero = (int) $_GET['numero'];   // Cambiar tipo de dato;
+    }else{
+        $numero = 1;
+    }
+
+echo "<h1>Tabla de multiplicar del número $numero</h1>";
+
+$contador = 0;
+while($contador <= 10){
+    echo "$numero x $contador = ".($numero*$contador)."<br/>";
+    $contador++;
+}
+
