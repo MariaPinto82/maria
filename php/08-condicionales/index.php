@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 /**
  * Condicional IF:
  * 
@@ -39,9 +40,9 @@
 // Ejemplo 1:
 $color = "rojo";
 
-if($color === "rojo"){
+if ($color === "rojo") {
     echo "El color es el rojo";
-}else{
+} else {
     echo "Es otro color";
 };
 echo "<hr>";
@@ -49,9 +50,9 @@ echo "<hr>";
 // Ejemplo 2:
 $year = 2021;
 
-if($year == 2021){
+if ($year == 2021) {
     echo "Estamos en el 2021";
-}else{
+} else {
     echo "No estamos en la epoca";
 };
 echo "<hr>";
@@ -63,16 +64,15 @@ $cuidad = "La Coruña";
 $continente = "Europa";
 $nombre = "David Gomez";
 
-if($edad >= $mayoriaEdad){
+if ($edad >= $mayoriaEdad) {
     echo "<h3>$nombre es mayor de edad </h3>";
 
-    if($continente == "Europa"){
+    if ($continente == "Europa") {
         echo "<h3>y es de $cuidad </h3>";
-    }else{
+    } else {
         echo "<h3>No es de Europa </h3>";
     }
-    
-}else{
+} else {
     echo "<h3>$nombre es menor de edad </h3>";
 }
 
@@ -80,21 +80,21 @@ echo "<hr>";
 // Ejemplo 4: no se deberia hacer así, solo es un ejemplo para enseñar...
 $dia = 7;
 
-if($dia == 1){
+if ($dia == 1) {
     echo "Es lunes";
-}else{
-    if($dia == 2){
+} else {
+    if ($dia == 2) {
         echo "Es martes";
-    }else{
-        if($dia == 3){
+    } else {
+        if ($dia == 3) {
             echo "Es miercoles";
-        }else{
-            if($dia == 4){
+        } else {
+            if ($dia == 4) {
                 echo "Es jueves";
-            }else{
-                if($dia == 5){
+            } else {
+                if ($dia == 5) {
                     echo "Es viernes";
-                }else{
+                } else {
                     echo "Es fin de semana";
                 }
             }
@@ -106,17 +106,17 @@ echo "<hr>";
 // Ejemplo 5:  // Así si deberia hacerse...para obtener una buena practica en programación;
 $day = 4;
 
-if($day == 1){
+if ($day == 1) {
     echo "lunes";
-}elseif($day == 2){
+} elseif ($day == 2) {
     echo "martes";
-}elseif($day == 3){
+} elseif ($day == 3) {
     echo "miercoles";
-}elseif($day == 4){
+} elseif ($day == 4) {
     echo "jueves";
-}elseif($day == 5){
+} elseif ($day == 5) {
     echo "miercoles";
-}else{
+} else {
     echo "fin de semana";
 };
 
@@ -126,18 +126,46 @@ $edad1 = 18;
 $edad2 = 64;
 $edadOficial = 20;
 
-if($edadOficial >= $edad1 && $edadOficial <= $edad2){
+if ($edadOficial >= $edad1 && $edadOficial <= $edad2) {
     echo "Esta en edad de trabajar";
-}else{
+} else {
     echo "No esta en edad de trabajar";
 }
 
 echo "<hr>";
 // Ejemplo 7: si una se cumple, se dara como true
 $pais = "Mexico";
-if($pais == "Mexico" || $pais == "España" || $pais == "Colombia"){
+if ($pais == "Mexico" || $pais == "España" || $pais == "Colombia") {
     echo "En este pais se habla español";
-}else{
+} else {
     echo "No se habla español";
 }
 
+echo "<hr>";
+// SWITCH:
+$dia1 = 4;
+
+switch ($dia) {
+    case 1:
+        echo "Lunes";
+        break;
+
+    case 2:
+        echo "Martes";
+        break;
+
+    case 3:
+        echo "Miercoles";
+        break;
+
+    case 4:
+        echo "Jueves";
+        break;
+
+    case 5:
+        echo "Viernes";
+        break;
+    
+    default:
+        echo "Es fin de semana";
+}
