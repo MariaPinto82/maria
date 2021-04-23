@@ -171,7 +171,7 @@ switch ($dia) {
 }
 
 echo "<hr>";
-// Goto:
+// Goto: busca la marca, se salta lo que hay entre medias y ejecuta directamente lo que hay dentro de la marca;
 goto marca;
 echo "<h3>Instruccion 1</h3>";
 echo "<h3>Instruccion 2</h3>";
