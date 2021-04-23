@@ -27,6 +27,14 @@
  * null si no hay valores definidos y no son null. 
  */
 
+/**
+ * Operadores logicos:
+ * && (and);
+ * || (or);
+ * !  (not);
+ */
+
+
 
 // Ejemplo 1:
 $color = "rojo";
@@ -122,4 +130,14 @@ if($edadOficial >= $edad1 && $edadOficial <= $edad2){
     echo "Esta en edad de trabajar";
 }else{
     echo "No esta en edad de trabajar";
-};
+}
+
+echo "<hr>";
+// Ejemplo 7:
+$pais = "Mexico";
+if($pais == "Mexico" || $pais == "España" || $pais == "Colombia"){
+    echo "En este pais se habla español";
+}else{
+    echo "No se habla español";
+}
+
