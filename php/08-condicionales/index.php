@@ -27,6 +27,8 @@
  * null si no hay valores definidos y no son null. 
  */
 
+
+// Ejemplo 1:
 $color = "rojo";
 
 if($color === "rojo"){
@@ -36,9 +38,33 @@ if($color === "rojo"){
 };
 echo "<hr>";
 
+// Ejemplo 2:
 $year = 2021;
+
 if($year == 2021){
     echo "Estamos en el 2021";
 }else{
     echo "No estamos en la epoca";
+};
+echo "<hr>";
+
+// Ejemplo 3: 
+$edad = 38;
+$mayoriaEdad = 18;
+$cuidad = "La Coruña";
+$continente = "Europa";
+$nombre = "David Gomez";
+
+if($edad >= $mayoriaEdad){
+    echo "<h3>$nombre es mayor de edad </h3>";
+
+    if($continente == "Europa"){
+        echo "<h3>y es de $cuidad </h3>";
+    }else{
+        echo "<h3>No es de Europa </h3>";
+    }
+    
+}else{
+    echo "<h3>$nombre es menor de edad </h3>";
 }
+
