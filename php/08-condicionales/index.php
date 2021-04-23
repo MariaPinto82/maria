@@ -68,8 +68,9 @@ if($edad >= $mayoriaEdad){
     echo "<h3>$nombre es menor de edad </h3>";
 }
 
-// Ejemplo 4:
-$dia = 5;
+echo "<hr>";
+// Ejemplo 4: no se deberia hacer así, solo es un ejemplo para enseñar...
+$dia = 7;
 
 if($dia == 1){
     echo "Es lunes";
@@ -86,11 +87,27 @@ if($dia == 1){
                 if($dia == 5){
                     echo "Es viernes";
                 }else{
-                    if($dia == 6){
-                        echo "Es fin de semana";
-                    }
+                    echo "Es fin de semana";
                 }
             }
         }
     }
+};
+echo "<hr>";
+
+// Ejemplo 5:  // Así si deberia hacerse...para obtener una buena practica en programación;
+$day = 4;
+
+if($day == 1){
+    echo "lunes";
+}elseif($day == 2){
+    echo "martes";
+}elseif($day == 3){
+    echo "miercoles";
+}elseif($day == 4){
+    echo "jueves";
+}elseif($day == 5){
+    echo "miercoles";
+}else{
+    echo "fin de semana";
 }
