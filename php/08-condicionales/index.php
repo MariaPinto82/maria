@@ -110,4 +110,16 @@ if($day == 1){
     echo "miercoles";
 }else{
     echo "fin de semana";
-}
+};
+
+echo "<hr>";
+// Ejemplo 6:
+$edad1 = 18;
+$edad2 = 64;
+$edadOficial = 20;
+
+if($edadOficial >= $edad1 && $edadOficial <= $edad2){
+    echo "Esta en edad de trabajar";
+}else{
+    echo "No esta en edad de trabajar";
+};
