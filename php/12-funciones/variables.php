@@ -12,8 +12,8 @@ $frase = "Ni los genios son ten genios, ni los mediocres tan mediocres";
 
 
 echo $frase;
-
-function holaMundo()
+echo "<hr/>";
+/*function holaMundo()
 {
 
     global $frase;  // Aqui declaramos que la variable es global.
@@ -25,4 +25,24 @@ function holaMundo()
     return $year;
 }
 
-echo holaMundo();
+echo holaMundo();*/
+
+// Funciones variables:
+function buenosDias()
+{
+    echo "Hola! Buenos días :)";
+}
+
+function buenasTardes()
+{
+    echo "Hey! Que tal ha ido la comida?";
+}
+
+function buenasNoches()
+{
+    echo "Feliz noche! A soñar con los angelitos";
+}
+
+$horario = $_GET['horario'];
+
+echo $horario();
