@@ -47,5 +47,12 @@ if(isset($_GET['numero'])){
 echo "<h1>Tabla de multiplicar del número $numero</h1>";
 
 for($contador = 1; $contador <= 10; $contador++){
+
+    if($numero == 45){
+        echo "<h1>No se pueden mostrar estas operaciones</h1>";
+        break;
+    }
+
+
     echo "$numero x $contador = ".($numero*$contador)."<br/>";
 }
