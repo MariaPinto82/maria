@@ -47,7 +47,8 @@ function tablas($numero){
     tablas(56);
 }else{
     echo "No hay numero para sacar la tabla";
-}
+}echo "<hr/>";
+
 */
 // Tablas de multiplicar del 1 al 10;
 /*for($i = 0; $i <= 10; $i++){
@@ -64,27 +65,51 @@ function calculadora($numero1, $numero2, $negrita = false){
     $multi = $numero1 * $numero2;
     $division = $numero1 / $numero2;
 
+    $cadenaTexto = "";
     if($negrita){
-        echo "<h1>";
+        $cadenaTexto .= "<h1>";
     }
 
-    echo "Suma: $suma <br/>";
-    echo "Resta: $resta <br/>";
-    echo "Multiplicación: $multi <br/>";
-    echo "Division: $division <br/>";
-    echo "<hr/>";
+    $cadenaTexto .= "Suma: $suma <br/>";
+    $cadenaTexto .="Resta: $resta <br/>";
+    $cadenaTexto .="Multiplicación: $multi <br/>";
+    $cadenaTexto .= "Division: $division <br/>";
+    $cadenaTexto .= "<hr/>";
 
     if($negrita){
         echo "</h1>";
     }
+
+    $cadenaTexto .= "<br/>";
+    
+    return $cadenaTexto;
+}
+
+echo calculadora(10, 30, true);
+
+
+// Ejemplo 4: 
+
+function getNombre($nombre){
+    $texto = "El nombre es: $nombre"; 
+    return $texto;
+}
+function getApellidos($apellidos){
+    $texto = "Los apellidos son: $apellidos"; 
+    return $texto;
 }
 
 
-
-calculadora(10, 30, true);
-calculadora(20, 30);
-calculadora(30, 30);
-calculadora(40, 30);
-
+function devuelveElNombre($nombre, $apellidos){
+    $texto = getNombre($nombre)
+            ."<br/>".
+            getApellidos($apellidos);
 
 
+    return $texto;
+};
+echo devuelveElNombre("Maria", "Pinto Sabater");
+echo "<hr/>";
+echo getNombre("Lucia");
+echo "<hr/>";
+echo getApellidos("Martinez");
