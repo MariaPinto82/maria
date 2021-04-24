@@ -19,3 +19,33 @@
  * pensar, ya que muchas veces se debe terminar el bucle usando una sentencia condicional BREAK en lugar de utilizar la expresion verdadera
  * del FOR.
  */
+/**
+ * Sintaxis del bucle For:
+ * 
+ * for(variable contador, condicion, actualizando contador){
+ *      // Bloque de instrucciones
+ * }
+ */
+
+/*$resultado = 0;
+for($i = 0; $i <= 100; $i++){
+    $resultado += $i;
+    echo "<p>$resultado</p>";
+}
+
+
+echo "<h1>El resultado es: $resultado</h1>";
+*/
+
+// Tabla de multiplicar con el bucle for;
+if(isset($_GET['numero'])){
+    $numero = (int) $_GET['numero'];   // Cambiar tipo de dato;
+}else{
+    $numero = 1;
+}
+
+echo "<h1>Tabla de multiplicar del número $numero</h1>";
+
+for($contador = 1; $contador <= 10; $contador++){
+    echo "$numero x $contador = ".($numero*$contador)."<br/>";
+}
