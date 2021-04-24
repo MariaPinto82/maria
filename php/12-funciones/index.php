@@ -56,22 +56,35 @@ function tablas($numero){
 */
 // Ejemplo 3:
 
-function calculadora($numero1, $numero2){
+function calculadora($numero1, $numero2, $negrita = false){
+    
     // Conjunto de instrucciones a ejecutar.
     $suma = $numero1 + $numero2;
     $resta = $numero1 - $numero2;
     $multi = $numero1 * $numero2;
     $division = $numero1 / $numero2;
 
+    if($negrita){
+        echo "<h1>";
+    }
 
     echo "Suma: $suma <br/>";
     echo "Resta: $resta <br/>";
     echo "Multiplicación: $multi <br/>";
     echo "Division: $division <br/>";
     echo "<hr/>";
+
+    if($negrita){
+        echo "</h1>";
+    }
 }
 
-calculadora(10, 30);
+
+
+calculadora(10, 30, true);
 calculadora(20, 30);
 calculadora(30, 30);
 calculadora(40, 30);
+
+
+
