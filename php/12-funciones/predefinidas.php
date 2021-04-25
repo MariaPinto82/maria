@@ -85,4 +85,14 @@ echo strlen($cadena);
 // Encontrar en un string un caracter, una palabra...
 echo "<hr/>";
 $frase = "La vida es bella";
-echo strpos($frase, "vida");
+echo strpos($frase, "i");
+echo "<br/>";
+// Reemplazar palabras de un string
+$frase = str_replace("vida", "moto", $frase);
+
+echo $frase;
+echo "<br/>";
+// Mayusculas y Minisculas
+echo strtolower($frase);
+echo "<br/>";
+echo strtoupper($frase);
