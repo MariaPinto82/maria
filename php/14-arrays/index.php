@@ -63,3 +63,37 @@ foreach ($cantantes as $cantante) {
 }
 
 echo "</ul>";
+
+
+// Arrays asociativos:
+$personas = array(
+    'nombre' => 'Maria',
+    'apellidos' => 'Pinto Sabater',
+    'web' => 'mariapinto.es'
+);
+
+var_dump($personas);
+
+// Arrays multidimensionales:
+$contactos = array(
+    array(
+        'nombre' => 'Maria',
+        'apellidos' => 'Pinto Sabater',
+        'email' => 'leonor2410@hotmail.com',
+    ),
+    array(
+        'nombre' => 'Marco',
+        'apellidos' => 'Sanchez Castro',
+        'email' => 'marco@hotmail.com',
+    ),
+    array(
+        'nombre' => 'Lucas',
+        'apellidos' => 'Marino Ruiz',
+        'email' => 'marino@hotmail.com',
+    ),
+    array(
+        'nombre' => 'Oscar',
+        'apellidos' => 'Martinex Castro',
+        'email' => 'martinex@hotmail.com',
+    ),
+);
