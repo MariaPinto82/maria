@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Arrays: Un array en PHP es en realidad un mapa ordenado. Un mapa es un tipo de datos que asocia valores
  * con claves. Este tipo se optimiza para varios usos diferentes; se pueden emplear como un array, lista (vector), tabla asociativa (tabla hash - una
@@ -35,6 +36,30 @@ $pelicula = "Batman";
 $peliculas = array('batman', 'spiderman', 'xmen', 'el señor de los anillos');  // Creando el primer array
 $cantantes = ['2pac', 'Drake', 'Jennifer Lopez'];
 
-var_dump($peliculas[2]); 
+var_dump($peliculas[2]);
 echo "<hr/>";
 var_dump($cantantes[0]);
+
+// Recorrer con bucle for:
+
+echo "<h1>Listado de peliculas</h1>";
+
+echo "<ul>";
+
+for ($i = 0; $i < count($peliculas); $i++) {
+    echo "<li>" . $peliculas[$i] . "</li>";
+}
+
+echo "</ul>";
+
+
+// Recorrer con foreach:
+echo "<h1>Listado de cantantes</h1>";
+
+echo "<ul>";
+
+foreach ($cantantes as $cantante) {
+    echo "<li>" . $cantante . "</li>";
+}
+
+echo "</ul>";
