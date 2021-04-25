@@ -1,5 +1,5 @@
 <?php
-require 'includes/cabecera.php';
+require_once 'includes/cabecera.php';
 ?>
 
 <!--Contenido-->
@@ -9,5 +9,5 @@ require 'includes/cabecera.php';
 </div>
 
 <?php
-require 'includes/footer.php';
+require_once 'includes/footer.php';
 ?>
