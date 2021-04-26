@@ -97,3 +97,8 @@ $contactos = array(
         'email' => 'martinex@hotmail.com',
     ),
 );
+echo "<hr/>";
+foreach ($contactos as $key => $contacto){
+    var_dump($contacto['nombre']);
+}
+
