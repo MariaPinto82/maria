@@ -19,9 +19,20 @@ console.log("colores:", colores[0]);
 
 // Variables de tipo objeto
 let zumo = {
-    "ingrediente1":"fressa",
-    "ingrediente2":"mandarina",
-    "ingrediente3":"banana"
+    "ingrediente1": "fressa",
+    "ingrediente2": "mandarina",
+    "ingrediente3": "banana"
 }
 
-console.log("zumo:", zumo.ingrediente1)
+console.log("zumo:", zumo.ingrediente1);
+
+
+// Variables DOM('Modelo de Objetos del Documento')
+/**
+ * El DOM es la estructura de objetos que genera el navegador cuando se carga un documento
+ * y se puede alterar mediante Javascript para cambiar dinamicamente los contenidos y aspecto
+ * de la pagina.
+ */
+
+let cajon = document.querySelector('#cajon');
+console.log("cajon:", cajon)
