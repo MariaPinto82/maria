@@ -31,5 +31,7 @@ object.saludar("Hola");
 // El objeto Date ae utiliza para trabajar con fechas y horas
 
 let d = new Date();   // Saca la fecha y hora actual
-console.log("d", d)
+console.log("d", d);
+let y = d.getFullYear();
+console.log("y", y);
 
