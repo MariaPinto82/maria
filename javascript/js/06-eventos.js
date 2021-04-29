@@ -1,43 +1,25 @@
 'use strict';
-let cajas = document.querySelectorAll(".cajas");
-
-cajas[i].style.width = "50px";
-cajas[i].style.height = "50px";
-cajas[i].style.background = "red";
-cajas[i].style.marginTop = "5px";
-cajas[i].style.marginRight = "5px";
-cajas[i].style.display = "inline-block";
 /*======================================================================================================================
-                                            Bucle For
+                                            Eventos
 =======================================================================================================================*/
-for(let a = 1; a < cajas.length; a++){
-    console.log("for:", a);
-}
 
+let recuadro = document.querySelector("#recuadro");
 
-for(let i = 0; i <= 10; i++){
-    console.log("for 2:", i);
+/*======================================================================================================================
+                                            Eventos desde el DOM
+=======================================================================================================================*/
+function cambiarColor(){
+    recuadro.style.background = "red";
 }
 
 /*======================================================================================================================
-                                            Bucle While (mientras)
+                                            Eventos desde JavaScript
 =======================================================================================================================*/
 
-let n = 1;
-while(n <= 5){
-    console.log("while:",n);
-    n++;
+let boton = document.querySelector("#boton");
+
+boton.addEventListener("click", moverCaja);
+function moverCaja(){
+    recuadro.style.width = "500px";
+    recuadro.style.transition = "1s width ease";
 }
-
-
-/*======================================================================================================================
-                                            Bucle Do While
-=======================================================================================================================*/
-let p = 1;
-
-do{
-    console.log("do while:", p);
-    p++;
-}
-while(p <= 5);
-
