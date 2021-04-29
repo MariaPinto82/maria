@@ -3,7 +3,8 @@
 /*======================================================================================================================
                                         Funciones sin Parametros
 =======================================================================================================================*/
-
+let globales = 10;
+console.log("globales", globales);
 // Declaramos la funcion
 
 function saludo(){
@@ -26,6 +27,8 @@ saludo();
 // Declaramos la funcion
 function operacion(digito1, digito2){
     let resultado = digito1 + digito2;
+    globales = resultado;
+    console.log("globales_operacion", globales);
     console.log("resultado", resultado);
 }
 
