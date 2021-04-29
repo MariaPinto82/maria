@@ -27,5 +27,55 @@ let boolean = new Boolean(false);
 console.log("boolean", boolean);
 
 /*====================================================================================================================
-                                            Clase Boolean
+                                            Clase Compuestas
 =====================================================================================================================*/
+
+// Clase Array
+let array = new Array('maria', 'pepe', 'rosa');
+console.log("array", array);
+
+
+/*====================================================================================================================
+                                            Clase Object
+=====================================================================================================================*/
+let object = new Object({
+    nombre: "maria", 
+    apellidos: "pinto",
+    edad: 38
+});
+
+console.log("object", object);
+
+/*====================================================================================================================
+                                            Clase Creadas por el/la Programador/a
+=====================================================================================================================*/
+
+// Creamos el prototipo 
+function Persona(){
+
+    // Porpiedades publicas
+    this.nombre;
+    this.edad;
+
+}
+
+let yo = new Persona();
+yo.nombre = "maria";
+yo.edad = "38 años";
+console.log(yo);
+
+
+/*====================================================================================================================
+                                            Clase Con Parametros
+=====================================================================================================================*/
+
+function Animales(nombre, raza){
+
+    // Propiedades Publicas
+    this.nombre = nombre;
+    this.raza = raza;
+}
+
+let mascota = new Animales("perro", "pitbull");
+
+console.log("mascota", mascota);
