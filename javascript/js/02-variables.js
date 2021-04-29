@@ -40,3 +40,4 @@ console.log("cajon:", cajon)
 
 let cajas = document.querySelectorAll('.cajas'); // Seleccion por clase (.cajas)
 console.log("cajas:", cajas)
+
