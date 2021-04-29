@@ -34,5 +34,9 @@ console.log("zumo:", zumo.ingrediente1);
  * de la pagina.
  */
 
-let cajon = document.querySelector('#cajon');
+let cajon = document.querySelector('#cajon');  // Seleccion por id (#cajon)
 console.log("cajon:", cajon)
+
+
+let cajas = document.querySelectorAll('.cajas'); // Seleccion por clase (.cajas)
+console.log("cajas:", cajas)
