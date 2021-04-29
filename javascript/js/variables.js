@@ -15,7 +15,7 @@ console.log("booleana:", booleana);
 
 // Variables de tipo Array
 let colores = ["rojo", "amarillo", "azul"];
-console.log("colores:", colores);
+console.log("colores:", colores[0]);
 
 // Variables de tipo objeto
 let zumo = {
