@@ -62,6 +62,16 @@ center {
     cursor: pointer;
 }
 
+#calculadora ul li:hover {
+    background: cyan;
+    color: white;
+}
+
+#calculadora ul li:active {
+    background: magenta;
+    color: white;
+}
+
 #borrar {
     position: absolute;
     bottom: 10px;
