@@ -84,3 +84,11 @@ center {
     color: white;
     cursor: pointer;
 }
+
+#borrar:hover {
+    background: purple;
+}
+
+#borrar:active {
+    background: rgb(49, 119, 211);
+}
