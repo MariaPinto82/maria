@@ -107,10 +107,28 @@ let b = {
     }, 10)
 }
 
+/**
+ * Caso 3: Tenemos 4 perros: un galgo, un dogo, un alano y un podenco. Este ultimo come más que el galgo;
+ *  el alano come más que el galgo y menos que el dogo, pero este come más que el podenco.
+ *  ¿Cual de los cuatro perros come menos?
+ */
 
 
 
 
 
+/**
+ * Caso 4: Seis amigos desean pasar sus vacaciones juntos y deciden, cada dos, utilizar diferentes medios
+ * de transporte; sabemos que Alejandro no utiliza el coche ya que éste acompaña a Benito que no va en avión.
+ * Andres viaja en avion. Si Carlos no va acompañado de Darío ni hace uso del avion, podria usted decirnos en 
+ * que medio de transporte llega a su destino Tomás.
+ */
 
 
+
+
+
+/**
+ * Caso 5: Si Angela habla mas bajo que Rosa y Celia habla mas alto que Rosa, ¿Habala Ángela mas alto o más bajo 
+ * que Celia?
+ */
