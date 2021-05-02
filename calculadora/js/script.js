@@ -4,7 +4,9 @@
 
 let p = {
     teclas: document.querySelectorAll("#calculadora ul li"),
-    accion: null
+    accion: null,
+    digito: null,
+    operaciones: document.querySelector("#operaciones")
 }
 
 
@@ -22,13 +24,19 @@ let m = {
         }
     },
     pulsar: function(e) {
-        p.accion = e.target.getAttribute("class")
-        m.calculadora(p.accion);
+        p.accion = e.target.getAttribute("class");
+        p.digito = e.target.innerHTML;
+        console.log("p.digito", p.digito)
+        m.calculadora(p.accion, p.digito);
     },
-    calculadora: function(accion) {
+    calculadora: function(accion, digito) {
         switch (accion) {
             case "numero":
-                console.log("numero");
+                if (p.operaciones.innerHTML == 0) {
+                    p.operaciones.innerHTML = digito;
+                } else {
+                    p.operaciones.innerHTML += digito;
+                }
                 break;
 
 
