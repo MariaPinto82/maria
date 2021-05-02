@@ -66,6 +66,9 @@ let m = {
                 break;
 
         }
+    },
+    borrarCalculadora: function() {
+        p.operaciones.innerHTML = 0;
     }
 }
 
