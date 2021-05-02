@@ -7,11 +7,12 @@ let p = {
     accion: null,
     digito: null,
     operaciones: document.querySelector("#operaciones"),
-    cantidadSignos: 0
+    cantidadSignos: 0,
+    cantidadDecimal: false,
+    resultado: false
+
+
 }
-
-
-
 
 /**
  * Objeto con los metodos de la calculadora
@@ -37,7 +38,14 @@ let m = {
                 if (p.operaciones.innerHTML == 0) {
                     p.operaciones.innerHTML = digito;
                 } else {
-                    p.operaciones.innerHTML += digito;
+                    if (p.resultado) {
+                        p.resultado = false;
+                        p.operaciones.innerHTML = digito;
+
+                    } else {
+                        p.operaciones.innerHTML += digito;
+                    }
+
                 }
                 break;
 
@@ -50,6 +58,8 @@ let m = {
                             p.operaciones.innerHTML = 0
                         } else {
                             p.operaciones.innerHTML += digito;
+                            p.cantidadDecimal = false;
+                            p.resultado = false;
                         }
 
                     }
@@ -57,18 +67,25 @@ let m = {
                 break;
 
             case "decimal":
-                console.log("decimal");
+                if (!p.cantidadDecimal) {
+                    p.operaciones.innerHTML += digito;
+                    p.cantidadDecimal = true;
+                }
                 break;
 
 
             case "igual":
-                console.log("igual");
+                p.operaciones.innerHTML = eval(p.operaciones.innerHTML);
+                p.resultado = true;
+
                 break;
 
         }
+        console.log("p.resultado", p.resultado)
     },
     borrarCalculadora: function() {
         p.operaciones.innerHTML = 0;
+
     }
 }
 
