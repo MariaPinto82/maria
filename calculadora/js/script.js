@@ -70,6 +70,7 @@ let m = {
                 if (!p.cantidadDecimal) {
                     p.operaciones.innerHTML += digito;
                     p.cantidadDecimal = true;
+                    p.resultado = false;
                 }
                 break;
 
