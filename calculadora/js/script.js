@@ -24,11 +24,16 @@ let m = {
             console.log("i", i)
             p.teclas[i].addEventListener("click", m.pulsar)
         }
+
     },
+
+
+
+
     pulsar: function(e) {
         p.accion = e.target.getAttribute("class");
         p.digito = e.target.innerHTML;
-        console.log("p.digito", p.digito)
+
         m.calculadora(p.accion, p.digito);
     },
     calculadora: function(accion, digito) {
@@ -37,6 +42,7 @@ let m = {
                 p.cantidadSignos = 0;
                 if (p.operaciones.innerHTML == 0) {
                     p.operaciones.innerHTML = digito;
+
                 } else {
                     if (p.resultado) {
                         p.resultado = false;
@@ -48,7 +54,6 @@ let m = {
 
                 }
                 break;
-
 
             case "signo":
                 p.cantidadSignos++
