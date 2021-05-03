@@ -28,11 +28,14 @@ let m = {
     paginacionSlide: function(item) {
         p.item = item.target.parentNode.getAttribute("item") - 1;
 
-        m.movimientoSLide(p.item);
+        m.movimientoSlide(p.item)
     },
-    movimientoSLide: function(item) {
+    movimientoSlide: function(item) {
         p.cajaSlide.style.left = item * -100 + "%";
+        for (let i = 0; i < p.paginacion.length; i++) {
+            p.paginacion[i].style.opacity = .5;
+        }
+        p.paginacion[item].style.opacity = 1;
     }
 }
-
 m.inicioSLide();
