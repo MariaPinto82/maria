@@ -10,7 +10,9 @@ let p = {
     animacionSilde: "slide",
     imgSlide: document.querySelectorAll("#slide ul li"),
     avanzar: document.querySelector("#slide #avanzar"),
-    retroceder: document.querySelector("#slide #retroceder")
+    retroceder: document.querySelector("#slide #retroceder"),
+    velocidadSlide: 3000,
+    formatearLoop: false
 
 }
 
@@ -32,6 +34,7 @@ let m = {
 
         p.retroceder.addEventListener("click", m.retroceder);
 
+        m.intervalo();
     },
 
     paginacionSlide: function(item) {
@@ -74,6 +77,8 @@ let m = {
 
     movimientoSlide: function(item) {
 
+        p.formatearLoop = true;
+
         p.cajaSlide.style.left = item * -100 + "%";
 
         for (let i = 0; i < p.paginacion.length; i++) {
@@ -104,8 +109,24 @@ let m = {
 
         }
 
-    }
+    },
+    intervalo: function() {
 
+        setInterval(function() {
+
+            if (p.formatearLoop) {
+
+                p.formatearLoop = false;
+
+            } else {
+
+                m.avanzar();
+
+            }
+
+        }, p.velocidadSlide)
+
+    }
 }
 
 m.inicioSlide();
