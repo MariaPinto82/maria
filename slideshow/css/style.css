@@ -320,7 +320,7 @@ PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
 PANTALLA DE PHONES - EXTRA SMALL (xs) - revisamos en movil horizontal 480px o vertical 320px
 =============================================*/
 
-@media(max-width:767px) {
+@media(max-width:768px) {
     .col-xs-12 {
         width: 100%;
     }
