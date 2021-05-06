@@ -133,12 +133,12 @@ SLIDESHOW
     color: white;
 }
 
-#slide ul li .textoSlide h1 {
+#slide ul li .textoSlide h2 {
     background: rgba(0, 0, 0, .5);
     padding: 5px 0;
 }
 
-#slide ul li .textoSlide h4 {
+#slide ul li .textoSlide h5 {
     background: rgba(0, 0, 0, .5);
     padding-bottom: 10px;
 }
@@ -307,10 +307,10 @@ PANTALLA DE TABLET - SMALL (sm) - revisamos en tablet vertical 768px
         width: 100%;
     }
     /*SLIDE*/
-    #slide ul li .textoSlide h1 {
+    #slide ul li .textoSlide h2 {
         font-size: 20px;
     }
-    #slide ul li .textoSlide h4 {
+    #slide ul li .textoSlide h5 {
         font-size: 12px;
     }
 }
