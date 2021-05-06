@@ -145,6 +145,36 @@ SLIDESHOW
 
 
 /*=============================================
+                Galeria
+=============================================*/
+
+#galeria {
+    position: relative;
+    margin: auto;
+    width: 100%;
+}
+
+#galeria ul {
+    padding: 20px;
+}
+
+#galeria ul li {
+    padding: 10px;
+    cursor: pointer;
+    /*transition: 6s;*/
+}
+
+#galeria ul li:hover {
+    transition: 6s;
+    opacity: .6;
+}
+
+#galeria ul li img {
+    width: 100%;
+}
+
+
+/*=============================================
 PANTALLA DE ESCRITORIO GRANDE - LARGE (lg) - revisamos en portatil o pc
 =============================================*/
 
