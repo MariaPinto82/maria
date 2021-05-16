@@ -179,6 +179,10 @@ Efecto de mouse
 =============================================*/
 
 #efectoMouse {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: silver;
     overflow: hidden;
 }
 
