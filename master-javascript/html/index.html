@@ -43,11 +43,30 @@
     </p>
     <h3>Formulario</h3>
     <form>
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" placeholder="Escribe aquí..." />
+        <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" placeholder="Escribe aquí..." />
+        </p>
+        <p>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" placeholder="Escribe aquí..." />
+        </p>
+        <p>
+            <label>Descripción:</label>
+            <textarea name="descriptión" placeholder="Escribe aquí..."></textarea>
+        </p>
+        <input type="radio" name="genero" value="hombre">Hombre <br>
+        <input type="radio" name="genero" value="mujer">Mujer <br>
+        <input type="radio" name="genero" value="nada">Prefiero no decirlo <br>
 
-        <label for="apellidos">Apellidos</label>
-        <input type="text" name="apellidos" placeholder="Escribe aquí..." />
+
+
+        <select name="generoDos">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="nada">Prefiero no decirlo</option>
+        </select>
+        <input type="submit" value="enviar">
     </form>
     <h3>Listado de nombres</h3>
     <ol>
