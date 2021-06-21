@@ -11,6 +11,7 @@
 <body>
     <h1>Titulo de mi Web</h1>
     <h2>Bienvenidos a mi web</h2>
+    <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed hendrerit elit. Ut nisl libero, faucibus sit amet ligula sit amet, ultrices accumsan leo. Vivamus at ullamcorper elit, quis aliquet justo. Morbi laoreet in orci eget molestie. Pellentesque
         pretium, ex auctor hendrerit rhoncus, dolor nulla auctor eros, quis blandit augue turpis in mi. Mauris vulputate ipsum id leo fermentum aliquet. Fusce iaculis odio ante, eget congue tellus tincidunt at. Quisque ac consectetur arcu. Nulla feugiat
         libero in fermentum pharetra. Aenean elementum in leo sed pharetra. Integer consectetur sollicitudin nunc, et dictum dolor ullamcorper eget. Integer odio erat, viverra vitae lorem ut, eleifend rutrum sapien. Nunc quis varius mauris. Suspendisse
@@ -29,6 +30,8 @@
     <h2>Imagenes en html</h2>
     <img src="img/patitos.jpeg" alt="Imagen de patitos" title="foto de patitos recien nacidos" width="255px" height="195px">
     <img src="img/baby.jpg" alt="baby" title="bebe y cerdito recien nacido" width="255px">
+    <img src="img/descarga.jpeg" alt="descarga" title="" width="255px" height="195px">
+    <img src="img/hipo.jpeg" alt="hipo" title="hipopotamo" width="255px" height="195px">
 
     <h3>Tercer encabezado de la página</h3>
     <blockquote>
@@ -38,6 +41,34 @@
             ejemplo Aldus PageMaker, <i>el cual incluye versiones de Lorem Ipsum.</i>
     </blockquote>
     </p>
+
+
+    <!--------------------------------------------------------------------------------------------------------------------------->
+    <h2>Formulario en html</h2>
+    <form action="#" method="#">
+        <p>
+            <label for="nombre"> Nombre</label>
+            <input type="text" name="nombre" placeholder="Escribe aquí...">
+        </p>
+        <p>
+            <label for="apellidos"> Apellidos</label>
+            <input type="text" name="apellidos" placeholder="Escribe aquí...">
+        </p>
+        <p>
+            <label for="description">Description</label>
+            <textarea name="description"></textarea>
+        </p>
+        <input type="radio" name="genero" value="hombre">Hombre <br/>
+        <input type="radio" name="genero" value="mujer">Mujer <br/>
+        <input type="radio" name="genero" value="ninguno">Prefiero no decirlo <br/>
+        <select>
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="ninguno">Prefiero no decirlo</option>
+        </select>
+        <input type="submit" value="enviar">
+    </form>
+    <!----------------------------------------------------------------------------------------------------------------------------->
     <h3>Listas</h3>
     <ol>
         <li>Manzana</li>
@@ -49,6 +80,27 @@
         <li>Dos</li>
         <li>Tres</li>
     </ul>
+    <!------------------------------------------------------------------------------------------------------------------------------>
+    <h3>Tablas</h3>
+
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Pais</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Pinto</td>
+            <td>España</td>
+        </tr>
+        <tr>
+            <td>Marco</td>
+            <td>Castro</td>
+            <td>España</td>
+        </tr>
+    </table>
+    <!------------------------------------------------------------------------------------------------------------------------------>
 </body>
 
 </html>
