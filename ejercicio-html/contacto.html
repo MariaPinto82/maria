@@ -25,29 +25,27 @@
     </ul>
     <hr/>
     <!---------------------------------------Tabla de contenidos HTML---------------------------------------------------------------------------------------->
-    <h2>Bienvenido a mi pagina de contenidos</h2>
-    <table border="1">
-        <tr>
-            <th>Nutria</th>
-            <th>Patito</th>
-            <th>Hipo</th>
-            <th>Baby</th>
-        </tr>
-        <tr>
-            <td>
-                <img src="img/nutria.jpeg" alt="nutria" title="nutria" width="300px" height="300px">
-            </td>
-            <td>
-                <img src="img/patitos.jpeg" alt="patitos" title="patitos" width="400px" height="300px">
-            </td>
-            <td>
-                <img src="img/hipo.jpeg" alt="hipo" title="hipo" width="285px" height="300px">
-            </td>
-            <td>
-                <img src="img/baby.jpg" alt="baby" title="baby" width="300px" height="300px">
-            </td>
-        </tr>
-    </table>
+    <h2>Contacto</h2>
+    <form>
+        <p>
+            <label for="nombre">Nombre</label><br/>
+            <input type="text" name="nombre">
+        </p>
+        <p>
+            <label for="biografia">Biografia</label><br/>
+            <textarea name="biografia">Escribe aqui...</textarea>
+        </p>
+        <p>
+            <label for="edad">Edad</label><br/>
+            <select name="edad">
+                <option value="menor">Menor de edad</option>
+                <option value="adulto">Adulto</option>
+                <option value="65">Mayor de 65</option>
+        </select>
+        </p>
+        <input type="submit" value="enviar email">
+    </form>
+
 </body>
 
 </html>
