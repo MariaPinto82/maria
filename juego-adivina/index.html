@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Adivina el número</title>
+</head>
+
+<body>
+    <h1>Adivina el número</h1>
+    <p>Hemos seleccionado un número aleatorio entre el 1 y el 100. Vea si puede adivinarlo en 10 turnos o menos. Te diremos si tu respuesta fue demasiado alta o demasiado baja.</p>
+    <div class="form">
+        <label for="guessField">Ingresa un numero entre el 1 y el 100</label><input type="text" id="guessField" class="guessField">
+        <input type="submit" value="Enviar número" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+    </div>
+</body>
+
+</html>
