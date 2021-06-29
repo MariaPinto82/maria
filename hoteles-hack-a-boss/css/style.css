@@ -1,0 +1,116 @@
+@import 'normalice.css';
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap');
+body {
+    font-family: 'Catamaran', sans-serif;
+    background-color: #1f1e24;
+    color: white;
+    text-align: center;
+}
+
+h1,
+h2,
+h2 {
+    font-family: 'Ruda';
+}
+
+#jumbotron {
+    height: 200px;
+    background-image: url('/img/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jumbotron h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    animation: fadeEnter 0.5s ease-in-out 1s forwards;
+}
+
+.hotels {
+    padding: 30px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+}
+
+.hotel {
+    border: 1px solid white;
+    max-width: 290px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel .hotel-data {
+    flex: 1 1 auto;
+    padding-bottom: 80px;
+}
+
+.hotel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hotel h2,
+.hotel h3 {
+    margin: 0;
+}
+
+.hotel-booking a {
+    text-align: center;
+    padding: 14px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hotel-booking {
+    transition: background-color .3s ease;
+}
+
+.hotel-booking:hover {
+    background-color: #8a232a;
+}
+
+.hotel header,
+.hotel section {
+    padding: 20px;
+}
+
+.hotel .price {
+    color: #c73a43;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+footer {
+    background-color: #c73a43;
+}
+
+#colophon {
+    padding: 20px;
+}
+
+#colophon h3 {
+    font-size: 30px;
+}
+
+@keyframes fadeEnter {
+    from {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
